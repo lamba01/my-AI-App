@@ -163,7 +163,7 @@ function Chat({ conversationId, onMessagesChange }) {
         className="p-4 border-t border-zinc-200"
       >
         <input
-          className="w-full rounded-full dark:text-white border border-zinc-300 bg-white px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-zinc-900"
+          className="w-full rounded-full dark:text-black border border-zinc-300 bg-white px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-zinc-900"
           value={input}
           placeholder="Ask something..."
           onChange={(e) => setInput(e.currentTarget.value)}
