@@ -59,7 +59,7 @@ export default function ChatWrapper() {
             onClick={() => selectConversation(c.id)}
             className={`w-full text-sm text-left px-3 py-2 rounded-lg truncate ${
               c.id === conversationId
-                ? "bg-zinc-200 dark:bg-zinc-800"
+                ? "bg-zinc-200 dark:bg-zinc-800 dark:text-zinc-200"
                 : "hover:bg-zinc-100 dark:hover:bg-zinc-900"
             }`}
           >
@@ -160,10 +160,10 @@ function Chat({ conversationId, onMessagesChange }) {
           sendMessage({ text: input });
           setInput("");
         }}
-        className="p-4 border-t border-zinc-200 dark:border-zinc-800"
+        className="p-4 border-t border-zinc-200"
       >
         <input
-          className="w-full rounded-full border border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-900 px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-zinc-900 dark:focus:ring-zinc-100"
+          className="w-full rounded-full border border-zinc-300 bg-whitepx-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-zinc-900"
           value={input}
           placeholder="Ask something..."
           onChange={(e) => setInput(e.currentTarget.value)}
